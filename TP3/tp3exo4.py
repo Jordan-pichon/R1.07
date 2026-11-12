@@ -6,4 +6,10 @@ n = -1
 while n != x:
     n = int(input("Nombre ? "))
     t += 1
-    print("Plus grand" if n < x else "Plus petit" if n > x else "Gagné en", t)
+
+    if n < x:
+        print("plus grand")
+    elif n > x:
+        print("plus petit")
+
+print("Bravo ! Trouve en", t, "essais.")
